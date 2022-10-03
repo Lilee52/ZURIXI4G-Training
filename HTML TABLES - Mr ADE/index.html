@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Ade(Html tables)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            font-family: sans-serif;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        table {
+            border-spacing: 5px;
+            border: 1px solid #f4eeed;
+        }
+
+        .heading-content {
+            text-align: left;
+            margin: 0 0 1em;
+        }
+
+        #heading {
+            width: 80%;
+        }
+
+        
+
+        td,
+        th {
+            height: 4vh;
+            width: 90px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .fail {
+            color: red;
+        }
+
+        .pass {
+            color: green;
+        }
+
+        .middle {
+            color: black
+        }
+
+        .table-row {
+            background: #f4eeed;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <h1 class="heading-content">ST. BENEDICT HIGH SCHOOL</h1>
+        <h2 class="heading-content">CLASS SCORE DATA</h2>
+        <h2 class="heading-content">TEACHER: MR. ADE</h2>
+        <h2 class="heading-content">CLASS: SS2</h2>
+    </header>
+    <main>
+        
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr class="table-row">
+                    <th rowspan="2">SERIAL NO</th>
+                    <th rowspan="2">STUDENTS</th>
+                    <th colspan="5">SUBJECTS</th>
+                    <th rowspan="2" colspan="2">TOTAL SCORES</th>
+                </tr>
+
+                <tr class="table-row2">
+                    
+                    <th>Mathematics</th>
+                    <th>English</th>
+                    <th>Physics</th>
+                    <th>Chemsitry</th>
+                    <th>Biology</th>
+                </tr>
+
+                <tr class="table-row">
+                    <td>0</td>
+                    <td>Adekunle</td>
+                    <td class="pass">72</td>
+                    <td class="middle">43</td>
+                    <td class="pass">78</td>
+                    <td class="pass">73</td>
+                    <td class="fail">37</td>
+                    <td>303</td>
+                </tr>
+
+                <tr class="table-row2">
+                    <td>1</td>
+                    <td>John</td>
+                    <td class="middle">42</td>
+                    <td class="pass">64</td>
+                    <td class="pass">70</td>
+                    <td class="pass">55</td>
+                    <td class="pass">58</td>
+                    <td>289</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>2</td>
+                    <td>Peter</td>
+                    <td class="pass">62</td>
+                    <td class="middle">40</td>
+                    <td class="pass">73</td>
+                    <td class="pass">75</td>
+                    <td class="pass">99</td>
+                    <td>349</td>
+                </tr>
+
+                <tr class="table-row2">
+                    <td>3</td>
+                    <td>Rukayat</td>
+                    <td class="pass">77</td>
+                    <td class="pass">75</td>
+                    <td class="pass">78</td>
+                    <td class="pass">75</td>
+                    <td class="pass">82</td>
+                    <td>387</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>4</td>
+                    <td>Paul</td>
+                    <td class="pass">72</td>
+                    <td class="middle">40</td>
+                    <td class="pass">72</td>
+                    <td class="pass">70</td>
+                    <td class="pass">97</td>
+                    <td>351</td>
+                </tr>
+
+                <tr class="table-row2">
+                    <td>5</td>
+                    <td>Victor</td>
+                    <td class="pass">76</td>
+                    <td class="pass">64</td>
+                    <td class="middle">48</td>
+                    <td class="pass">99</td>
+                    <td class="fail">37</td>
+                    <td>324</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>6</td>
+                    <td>John</td>
+                    <td class="pass">62</td>
+                    <td class="pass">54</td>
+                    <td class="pass">78</td>
+                    <td class="pass">75</td>
+                    <td class="pass">64</td>
+                    <td>333</td>
+                </tr>
+
+                <tr class="table-row2">
+                    <td>7</td>
+                    <td>Doe</td>
+                    <td class="pass">52</td>
+                    <td class="pass">84</td>
+                    <td class="middle">48</td>
+                    <td class="pass">85</td>
+                    <td class="fail">27</td>
+                    <td>296</td>
+                </tr>
+
+                <tr class="table-row">
+                    <td>8</td>
+                    <td>Stephen</td>
+                    <td class="pass">92</td>
+                    <td class="middle">44</td>
+                    <td class="pass">78</td>
+                    <td class="pass">65</td>
+                    <td class="pass">61</td>
+                    <td>340</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </main>
+</body>
+</html>
