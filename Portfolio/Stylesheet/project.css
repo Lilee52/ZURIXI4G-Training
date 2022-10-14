@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: sans-serif;
+  --font-size: 16px;
+  --font-size-md: 28px;
+  --font-size-heading: ;
+  --background-color-white: #faf5e6;
+  --background2: #cc274c;
+  --background3: #2a2c41;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--background-color-white);
+  background: radial-gradient(
+    circle at top left,
+    var(--background3),
+    var(--background2)
+  );
+}
+
+header {
+  background: var(--background3);
+  max-width: 400px;
+  margin: 0 auto;
+  height: 5.5em;
+}
+
+nav {
+  display: flex;
+  padding: 0.5em;
+  flex-direction: row;
+  position: fixed;
+  background: var(--background3);
+  z-index: 2;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.logo {
+  list-style: none;
+}
+
+.logo li a {
+  color: var(--background2);
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.menu-icon {
+  margin-top: 0.2em;
+  margin-right: 3em;
+  color: var(--background2);
+}
+
+.hamburger-close-container {
+  position: relative;
+}
+
+.logo-hamburger-close-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  width: 96vw;
+}
+
+.menu-icon {
+  /* filter: opacity(1) drop-shadow(0 0 0 #cc274c); */
+}
+
+.nav-menu {
+  position: absolute;
+  visibility: hidden;
+  width: 90%;
+  align-items: center;
+  margin: 6em 0.5em;
+  padding: 2em;
+  background: var(--background-color-white);
+  z-index: 2;
+}
+
+.nav-menu li {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: var(--background3);
+  font-weight: 500;
+}
+
+.nav-menu li a:hover {
+  color: var(--background2);
+  cursor: pointer;
+}
+
+.menu-item {
+  margin-top: 3em;
+  border: 1px solid;
+}
+
+/* navbar js style */
+
+.nav-open {
+  visibility: visible;
+}
+
+main {
+  margin: 3em;
+}
+
+#Projects {
+  background: #2f3047;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  color: var(--background-color-white);
+}
+
+.project-heading {
+  text-align: center;
+}
+
+.project-container {
+  height: 290px;
+  margin-top: 3em;
+  max-width: 300px;
+  margin: 1em auto;
+}
+
+.project-container-heading {
+  margin-bottom: 1em;
+  margin-top: 3em;
+}
+
+.project-container ul li {
+  list-style: none;
+  /* border: 2px solid; */
+  border: 3px solid;
+  width: 80px;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  border-image-source: radial-gradient(
+    circle at top left,
+    var(--background2),
+    #ecd185
+  );
+
+  border-image-slice: 1;
+}
+
+.project-container ul li a {
+  text-decoration: none;
+  color: var(--background-color-white);
+}
+
+.project-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-container ul li:hover {
+  background: var(--background3);
+}
+
+.project-container ul li a:active {
+  color: var(--background2);
+  background: var(--background3);
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin-top: 10em;
+    margin-bottom: 5em;
+  }
+  .project-container {
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .project-main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .project-container-heading {
+    margin-bottom: 2em;
+  }
+}
+
+@media (min-width: 400px) {
+  .logo-hamburger-close-container {
+    width: 384px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-menu {
+    visibility: visible;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3em;
+    margin-top: 0em;
+    height: 6em;
+    margin-left: 8em;
+    margin-right: 3em;
+    width: 860px;
+  }
+
+  .nav-menu li a {
+    color: #cc274c;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .logo-hamburger-close-container {
+    min-width: 100vw;
+  }
+
+  header {
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    background: var(--background3);
+  }
+  nav {
+    position: relative;
+  }
+
+  .nav-main {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .close {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menu-icon {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-menu li a:active {
+    color:#ecd185;
+  }
+
+  .nav-menu li a:hover {
+    color: rgb(201, 166, 166)
+  }
+}
