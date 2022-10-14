@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="./Stylesheet/style.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="side-intro"></div>
+        <div class="side-overlay"></div>
+        <form action="success.html" method="GET" id="form">
+            <h1>Create Account</h1>
+            <div class="input-label-container">
+                <label for="name">First Name:</label>
+                <input id="f-name" name="First-name" type="text" placeholder="Please enter your first name" required />
+            </div>
+            <div class="input-label-container">
+                <label for="name">Last Name:</label>
+                <input id="l-name" name="Last-name" type="text" placeholder="Please enter your last name" required />
+            </div>
+            <div class="input-label-container">
+                <label for="name">Phone number:</label>
+                <input id="phone-no" name="Phone-no" type="tel" placeholder="Phone number" required />
+            </div>
+            <div class="input-label-container">
+                <label for="name">Email:</label>
+                <input id="email" name="Email" type="email" placeholder="Email" required />
+            </div>
+            <p>Gender:</p>
+            <div class="gender input-label-container">
+                <input id="gender" name="Gender" type="radio" required />
+                <label for="gender">Male</label>
+                
+            </div>
+            <div class="gender input-label-container">
+                <input id="gender" name="Gender" type="radio" required />
+                <label for="gender">Female<label>
+            </div>
+            <div class="input-label-container">
+                <label for="name">Date of birth:</label>
+                <input id="dob" name="Date of birth" type="date" required />
+            </div>
+
+            <div class="input-label-container">
+                <label for="color">Favorite Color:</label>
+                <input id="f-color" name="Favourite-color" type="color" required />
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <p class="link-p">Already have an account?</p>
+            <a href="login.html" target="_self" class="link">Login here</a>
+        </form>
+    </main>
+    <script src="./Javasrcipt/script.js"></script>
+</body>
+</html>

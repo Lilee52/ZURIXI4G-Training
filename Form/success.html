@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Registration Page</title>
+    <style>
+      :root {
+        --font-family: sans-serif;
+        --font-size: 16px;
+        --font-size-md: 28px;
+        --font-size-heading: ;
+        --background-color-white: #faf5e6;
+        --background2: #cc274c;
+        --background3: #2a2c41;
+      }
+      body {
+        background: radial-gradient(circle at top left, var(--background3), var(--background2));
+        font-family: sans-serif;
+      }
+
+      main {
+        max-width: 340px;
+        margin: 16em auto;
+        border: 1px solid var(--background-color-white);
+        color: var(--background-color-white);
+        padding: 3em;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(5px);
+      }
+
+      .link {
+        margin-top: 3em;
+        text-decoration: none;
+      }
+
+      .link:active {
+        color: var(--background2);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>Form Data</h1>
+      <div id="results"></div>
+      <a href="/index.html" class="link">Back to form</a>
+    </main>
+  </body>
+  <script>
+    const resultList = document.getElementById("results");
+    new URLSearchParams(window.location.search).forEach((value, name) => {
+      resultList.append(`${name}: ${value}`);
+      resultList.append(document.createElement("br"));
+    });
+  </script>
+</html>
